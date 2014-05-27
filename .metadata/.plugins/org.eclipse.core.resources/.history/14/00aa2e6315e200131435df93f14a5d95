@@ -1,0 +1,11 @@
+package br.com.agenda.domain;
+
+import java.io.Serializable;
+
+public class Audit implements Serializable {
+
+	private Long id;
+	private String metodo;
+	private String classe;
+	
+}

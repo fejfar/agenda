@@ -1,0 +1,46 @@
+package br.com.agenda.services;
+
+import java.util.List;
+
+import javax.ejb.Stateless;
+import javax.interceptor.ExcludeClassInterceptors;
+import javax.interceptor.Interceptors;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import br.com.agenda.domain.Contato;
+import br.com.agenda.interceptor.AuditInterceptor;
+
+@Stateless
+@Interceptors(AuditInterceptor.class)
+public class ContatoServiceImpl implements ContatoServiceLocal {
+	@PersistenceContext(name = "agenda-pu")
+	private EntityManager em;
+
+	@Override
+	public void salvar(Contato contato) {
+		em.merge(contato);
+
+	}
+
+	@Override
+	public void remover(Long id) {
+		Contato contato = this.buscarPorId(id);
+		em.remove(contato);
+	}
+
+	// impede interceptacao desse metodo
+	@ExcludeClassInterceptors
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Contato> listar() {
+		String sql = "FROM Contato";
+		return em.createQuery(sql).getResultList();
+	}
+
+	@Override
+	public Contato buscarPorId(Long id) {
+		return em.find(Contato.class, id);
+	}
+
+}

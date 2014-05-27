@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="javax.naming.InitialContext"/>
+<fullyQualifiedTypeName name="javax.interceptor.AroundInvoke"/>
+<fullyQualifiedTypeName name="javax.interceptor.InvocationContext"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+<fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
+<fullyQualifiedTypeName name="br.com.agenda.domain.Audit"/>
+<fullyQualifiedTypeName name="javax.interceptor.Interceptors"/>
+<fullyQualifiedTypeName name="javax.xml.registry.infomodel.AuditableEvent"/>
+<fullyQualifiedTypeName name="br.com.agenda.interceptor.AuditInterceptor"/>
+<fullyQualifiedTypeName name="javax.interceptor.ExcludeClassInterceptors"/>
+</qualifiedTypeNameHistroy>

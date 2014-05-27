@@ -1,0 +1,12 @@
+package br.com.agenda.interceptor;
+
+import javax.naming.InitialContext;
+
+public class AuditInterceptor {
+
+	public Object initialize(InitialContext context){
+		
+		return null;
+	}
+	
+}

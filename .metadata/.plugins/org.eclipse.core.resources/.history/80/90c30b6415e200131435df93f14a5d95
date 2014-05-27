@@ -1,0 +1,16 @@
+package br.com.agenda.domain;
+
+import java.io.Serializable;
+
+public class Audit implements Serializable {
+	private static final long serialVersionUID = 2473668872423869233L;
+
+	
+	private Long id;
+	
+	private String metodo;
+	
+	private String classe;
+	
+	private String parametros;
+}
